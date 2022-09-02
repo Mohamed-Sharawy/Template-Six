@@ -1,0 +1,222 @@
+/* var */
+:root {
+    --dark: #19283f;
+    --green: #33d1cc;
+    --reed: #ff3150;
+    --yellow: #ffc400;
+    --sec-col: #eff7fa;
+}
+.main-btn {
+    background-color: var(--reed);
+    color: var(--yellow);
+    padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+    color: var(--yellow);
+}
+.main-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+/* var */
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Start nav */
+.navbar {
+    background-color: var(--dark);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green);
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green);
+}
+
+.navbar .search svg {
+    color: var(--green);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green);
+}
+/* End nav */
+/* Start landing */
+.landing {
+    background-color: var(--dark);
+    min-height: calc(100vh - 72px);
+}
+/* End landing */
+/* Start features */
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--sec-col);
+}
+
+.features .icon-holder .icon {
+    color: var(--green);
+}
+
+.features .feat h4 {
+    color: var(--yellow);
+}
+/* End features */
+/* Start our work */
+.our-work {
+    background-color: var(--sec-col);
+}
+
+.our-work ul .active {
+    background-color: var(--reed);
+    color: var(--yellow);
+}
+
+.our-work ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.our-work ul li:not(.active):hover {
+    color: var(--reed);
+}
+
+.our-work .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(51 209 204 / 76%);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover::before {
+    transform: translateX(0);
+}
+/* End our work */
+/* Start stuff */
+.stuff .dis {
+    max-width: 500px;
+}
+/* End stuff */
+/* Start team */
+.team {
+    background-color: var(--sec-col);
+}
+
+.team h2 {
+    color: var(--yellow);
+}
+
+.team .box h4 {
+    background-color: var(--green);
+}
+/* End team */
+/* Start project */
+.project {
+    background-color: var(--dark);
+}
+/* End project */
+/* Start sub */
+.sub {
+    background-color: var(--yellow);
+}
+
+.sub .text {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.sub .text:focus {
+    outline: none;
+}
+
+.sub ::placeholder {
+    color: white;
+}
+
+.sub .btn {
+    background-color: var(--dark);
+    color: var(--yellow);
+}
+/* End sub */
+/* Start footer */
+.footer {
+    background-color: var(--dark);
+}
+
+.footer .cupy > span {
+    color: var(--green);
+}
+
+.footer .cupy div span {
+    color: var(--yellow);
+}
+
+.footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer .facebook {
+    background-color: #1877f2;
+}
+
+.footer .twitter {
+    background-color: #1da1f2;
+}
+
+.footer .linkedin {
+    background-color: #0077b5;
+}
+
+.footer .youtube {
+    background-color: #ff0000;
+}
+/* End footer */
